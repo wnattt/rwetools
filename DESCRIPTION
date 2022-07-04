@@ -1,0 +1,35 @@
+Package: rwetools
+Title: R functions for real-world data analysis
+Version: 7.2
+Author: Chenguang Wang [aut, cre]
+        Trustees of Columbia University [cph] (tools/make_cpp.R, R/stanmodels.R)
+Maintainer: Chenguang Wang <chenguang.wang.0517@gmail.com>
+Description: R functions for synthesizing real-world evidence in clinical trial design and analysis.
+Depends:
+    methods,
+    R (>= 3.5.0),
+    rstan (>= 2.19.2),
+    Rcpp (>= 1.0.2),
+    GA
+LinkingTo:
+    BH (>= 1.69.0-1),
+    Rcpp (>= 1.0.2),
+    rstan (>= 2.14),
+    RcppEigen (>= 0.3.3.5.0),
+    StanHeaders (>= 2.18.1-10)
+RcppModules:
+    stan_fit4powerp_mod,
+    stan_fit4powerps_mod,
+    stan_fit4powerpsbinary_mod,
+    stan_fit4prior_mod
+Imports:
+    parallel (>= 3.2)
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+License: GPL (>= 3)
+SystemRequirements: GNU make
+NeedsCompilation: yes
+Suggests: knitr
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
